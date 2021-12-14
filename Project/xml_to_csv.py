@@ -27,13 +27,14 @@ def xml_to_csv(path):
 
 
 def main():
-    image_dir = os.path.join('/Project', 'images')
-    image_path = os.path.join('/Project/annotations', 'XML')
-    os.chdir('/Project/annotations/labels_csv')
-    for directory in os.listdir(image_path):
+    image_dir = os.path.join('images')
+    image_xml_path = os.path.join(os.getcwd(), 'annotations', 'XML')
+    print(os.getcwd())
+    os.chdir(os.path.join(os.getcwd(), 'annotations', 'labels_csv'))
+    for directory in os.listdir(image_xml_path):
         if 'backup' in directory or 'new_img' in directory:
             continue
-        dir_path = os.path.join(image_path, directory)
+        dir_path = os.path.join(image_xml_path, directory)
         xml_df = xml_to_csv(dir_path)
         xml_df.to_csv(f'{directory}_objects_labels.csv', index=None, encoding='utf-8')
         print('Successfully converted xml to csv.')
