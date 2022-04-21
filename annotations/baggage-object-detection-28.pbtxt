@@ -1,0 +1,112 @@
+item {
+  id: 1
+  name: 'флакон'
+}
+item {
+  id: 2
+  name: 'инструменты'
+}
+item {
+  id: 3
+  name: 'батарея'
+}
+item {
+  id: 4
+  name: 'кабель'
+}
+item {
+  id: 5
+  name: 'ключи'
+}
+item {
+  id: 6
+  name: 'банка'
+}
+item {
+  id: 7
+  name: 'ножницы'
+}
+item {
+  id: 8
+  name: 'бутылка'
+}
+item {
+  id: 9
+  name: 'зажигалка'
+}
+item {
+  id: 10
+  name: 'парфюм'
+}
+item {
+  id: 11
+  name: 'газовый баллон'
+}
+item {
+  id: 12
+  name: 'взрывчатка'
+}
+item {
+  id: 13
+  name: 'детонатор'
+}
+item {
+  id: 14
+  name: 'бритва'
+}
+item {
+  id: 15
+  name: 'часы'
+}
+item {
+  id: 16
+  name: 'фонарик'
+}
+item {
+  id: 17
+  name: 'боеприпасы'
+}
+item {
+  id: 18
+  name: 'оружие'
+}
+item {
+  id: 19
+  name: 'граната'
+}
+item {
+  id: 20
+  name: 'отвертка'
+}
+item {
+  id: 21
+  name: 'ювелирное'
+}
+item {
+  id: 22
+  name: 'фальшвеер'
+}
+item {
+  id: 23
+  name: 'мина'
+}
+item {
+  id: 24
+  name: 'кастет'
+}
+item {
+  id: 25
+  name: 'нож'
+}
+item {
+  id: 26
+  name: 'электрошокер'
+}
+item {
+  id: 27
+  name: 'молоток'
+}
+item {
+  id: 28
+  name: 'электронное устройство'
+}

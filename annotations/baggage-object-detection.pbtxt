@@ -1,0 +1,212 @@
+item {
+  id: 1
+  name: 'smartphone'
+}
+item {
+  id: 2
+  name: 'flacon'
+}
+item {
+  id: 3
+  name: 'tablet'
+}
+item {
+  id: 4
+  name: 'laptop'
+}
+item {
+  id: 5
+  name: 'electric razor'
+}
+item {
+  id: 6
+  name: 'tools'
+}
+item {
+  id: 7
+  name: 'battery'
+}
+item {
+  id: 8
+  name: 'battery charger'
+}
+item {
+  id: 9
+  name: 'cable'
+}
+item {
+  id: 10
+  name: 'metal item'
+}
+item {
+  id: 11
+  name: 'coins'
+}
+item {
+  id: 12
+  name: 'keys'
+}
+item {
+  id: 13
+  name: 'footwear'
+}
+item {
+  id: 14
+  name: 'pot'
+}
+item {
+  id: 15
+  name: 'scissors'
+}
+item {
+  id: 16
+  name: 'bottle'
+}
+item {
+  id: 17
+  name: 'spoon'
+}
+item {
+  id: 18
+  name: 'pen'
+}
+item {
+  id: 19
+  name: 'lighter'
+}
+item {
+  id: 20
+  name: 'perfumery'
+}
+item {
+  id: 21
+  name: 'gas cylinder'
+}
+item {
+  id: 22
+  name: 'acoustic system'
+}
+item {
+  id: 23
+  name: 'explosive'
+}
+item {
+  id: 24
+  name: 'umbrella'
+}
+item {
+  id: 25
+  name: 'folding knife'
+}
+item {
+  id: 26
+  name: 'glasses'
+}
+item {
+  id: 27
+  name: 'detonator'
+}
+item {
+  id: 28
+  name: 'fan'
+}
+item {
+  id: 29
+  name: 'razor'
+}
+item {
+  id: 30
+  name: 'watch'
+}
+item {
+  id: 31
+  name: 'metal case'
+}
+item {
+  id: 32
+  name: 'thermos'
+}
+item {
+  id: 33
+  name: 'curling iron'
+}
+item {
+  id: 34
+  name: 'flashlight'
+}
+item {
+  id: 35
+  name: 'ammunition'
+}
+item {
+  id: 36
+  name: 'gun'
+}
+item {
+  id: 37
+  name: 'grenade'
+}
+item {
+  id: 38
+  name: 'camera'
+}
+item {
+  id: 39
+  name: 'screwdriver'
+}
+item {
+  id: 40
+  name: 'headphones'
+}
+item {
+  id: 41
+  name: 'book'
+}
+item {
+  id: 42
+  name: 'binoculars'
+}
+item {
+  id: 43
+  name: 'jewelry'
+}
+item {
+  id: 44
+  name: 'falshveer'
+}
+item {
+  id: 45
+  name: 'mine'
+}
+item {
+  id: 46
+  name: 'brass knuckles'
+}
+item {
+  id: 47
+  name: 'knife'
+}
+item {
+  id: 48
+  name: 'stun gun'
+}
+item {
+  id: 49
+  name: 'hammer'
+}
+item {
+  id: 50
+  name: 'electric device'
+}
+item {
+  id: 51
+  name: 'tincan'
+}
+item {
+  id: 52
+  name: 'plastic bottle'
+}
+item {
+  id: 53
+  name: 'phone'
+}
