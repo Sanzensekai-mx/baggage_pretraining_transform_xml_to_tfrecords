@@ -217,7 +217,8 @@ def split(df, group):
 
 
 def create_tf_example(group, path):
-    with tf.compat.v1.gfile.GFile(os.path.join(path, '{}'.format(group.filename)), 'rb') as fid:
+    print(os.path.join(path, '{}'.format(group.filename)))
+    with tf.gfile.GFile(os.path.join(path, '{}'.format(group.filename)), 'rb') as fid:
         # print(fid)
         # print(fid.readline())
         encoded_jpg = fid.read()
