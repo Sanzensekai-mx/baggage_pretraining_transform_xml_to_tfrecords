@@ -1,4 +1,4 @@
-"""
+r"""
 usage: preparation_img.py [-h] [-x XML_PATH] [-c OUTPUT_DIR] [-n NUM_CLASSES] [-i IMAGE_DIR]
 
 Convert images and images xml labels into tfrecords format
@@ -15,8 +15,11 @@ optional arguments:
   -i IMAGE_DIR, --image_dir IMAGE_DIR
                         Path to directory with images according with their xml files
 
-
+Example
+python preparation_img.py -x C:\Users\SanZenSekai\PycharmProjects\baggage_training\baggage-object-detector\annotations\XML\first_try_1024\train -n 53
+-i E:\Downloads\new_image_processing\3.baggage_1024x1024\pics -c E:\Downloads\new_image_processing\3.baggage_1024x1024
 """
+
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -54,18 +57,21 @@ def process_to_csv(image_xml_path: str, output_dir: str):
     # for directory in os.listdir(image_xml_path):
     #     dir_path = os.path.join(image_xml_path, directory)
     xml_df = xml_to_csv.xml_to_csv(image_xml_path)
-    num_of_same_csv_files = len([x for x in os.listdir(output_dir) if '_objects_labels.csv' in x])
+    xml_dirname = os.path.basename(image_xml_path)
+    num_of_same_csv_files = len([x for x in os.listdir(output_dir) if f'{xml_dirname}_objects_labels' in x])
     # print(os.listdir(os.path.split(output_dir)[0]))
     # print(num_of_same_csv_files)
-    directory = os.path.basename(image_xml_path) if num_of_same_csv_files == 0 else os.path.basename(
-        image_xml_path) + str(num_of_same_csv_files)
-    print(directory)
+    if num_of_same_csv_files == 0:
+        out_csv_path = os.path.join(output_dir, f'{xml_dirname}_objects_labels.csv')
+    else:
+        out_csv_path = os.path.join(output_dir, f'{xml_dirname}_objects_labels{num_of_same_csv_files}.csv')
+    # print(directory)
     if output_dir is not None and os.path.exists(output_dir) and os.path.isdir(output_dir):
-        xml_df.to_csv(os.path.join(output_dir, f'{directory}_objects_labels.csv'), index=None, encoding='utf-8')
+        xml_df.to_csv(out_csv_path, index=None, encoding='utf-8')
     else:
         sys.exit()
-    print(f'Successfully converted dir \"{directory}\" with xml to csv.')
-    return os.path.join(output_dir, f'{directory}_objects_labels.csv')
+    print(f'Successfully converted dir \"{xml_dirname}\" with xml to csv.')
+    return os.path.join(out_csv_path)
 
 
 electronic_devices = ['electronic device', 'smartphone', 'laptop', 'tablet', 'electric razor', 'battery charger',
